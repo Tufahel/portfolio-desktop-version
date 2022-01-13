@@ -45,4 +45,4 @@ To get a local copy up and running follow these simple example steps.
 👤 Author1
 
 - GitHub: [@Tufahel](https://github.com/Tufahel)
-- LinkedIn: [Tufahel Ahmed](https://bd.linkedin.com/in/tufahel-ahmed-58b076164)
+- LinkedIn: [Tufahel Ahmed](https://bd.linkedin.com/in/tufahel-ahmed-972884203)
