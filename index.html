@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="popUp.css">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -82,8 +83,8 @@
       </div>
     </section>
     <section class="cards">
-      <div class="card">
-        <div class="card__content flex__container">
+      <div class="card project">
+        <div id="first" class="card__content flex__container">
           <div class="flex__child">
             <img
               src="images/Snapshoot-Portfolio.png"
@@ -93,7 +94,7 @@
           </div>
           <div class="flex__child">
             <h2>Multi-Post Stories</h2>
-            <div class="card__tag">
+            <div class="card__tag" id="firstTag">
               <div class="tag">
                 <p>Canopy</p>
               </div>
@@ -124,7 +125,7 @@
                   <p>javascript</p>
                 </li>
               </ul>
-              <div class="btn btn1">
+              <div id="myBtn" class="btn btn1">
                 <p>See Project</p>
               </div>
             </div>
@@ -387,5 +388,6 @@
         </form>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

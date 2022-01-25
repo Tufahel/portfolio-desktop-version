@@ -1,0 +1,117 @@
+const projects = [
+  {
+    title: 'Multi-post story1',
+    src: 'images/Snapshoot-Portfolio.png',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    seeLiveLink: '#',
+    seeSourceLink: '#',
+  },
+  {
+    title: 'Multi-post story1',
+    src: 'images/Snapshoot-Portfolio-1.png',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    seeLiveLink: '#',
+    seeSourceLink: '#',
+  },
+  {
+    title: 'Multi-post story1',
+    src: 'images/Snapshoot-Portfolio-2.png',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    seeLiveLink: '#',
+    seeSourceLink: '#',
+  },
+  {
+    title: 'Multi-post story1',
+    src: 'images/Snapshoot-Portfolio-3.png',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    seeLiveLink: '#',
+    seeSourceLink: '#',
+  },
+];
+
+const Btns = document.getElementsByClassName('btn1');
+const projectWork = document.querySelector('.project');
+const popUp = document.createElement('section');
+popUp.classList.add('modal');
+
+function popUpDesktop(cardNumber) {
+  popUp.style.display = 'block';
+  projectWork.appendChild(popUp);
+  popUp.innerHTML = `
+      <div class="modal-content">
+      <div>
+      <div class="modal-header">
+      <h2>${projects[cardNumber].title}</h2>
+      <i class="fa fa-times" id="close-popUp" aria-hidden="true"></i>
+      </div>
+      <div class="card__tag card__tag__modal">
+          <div class="tag">
+            <p>Canopy</p>
+          </div>
+          <div class="tag__inactive">
+            <img src="images/Counter.png" alt="" />
+            <p>Back End Dev</p>
+          </div>
+          <div class="tag__inactive">
+            <img src="images/Counter.png" alt="" />
+            <p>2015</p>
+          </div>
+      </div>
+      <div class="modal-image">
+        <img src=${projects[cardNumber].src} alt="App Image">
+      </div>
+      <div class="modal-flex">
+      <div class="modal-description">
+        <p>${projects[cardNumber].description[0]}</p>
+      </div>
+      <div class="modal-technologies">
+        <ul class="project-tools">
+            <ul class="mini__btn">
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[0]}</p>
+                </li>
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[1]}</p>
+                </li>
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[2]}</p>
+                </li>
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[3]}</p>
+                </li>
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[4]}</p>
+                </li>
+                <li class="btn">
+                <p>${projects[cardNumber].technologies[5]}</p>
+                </li>
+            </ul>
+        </ul>
+        <div class="modal-btns">
+        <button>
+          <a href="${projects[cardNumber].seeLiveLink}">See Live <img src="images/tir.png" alt="See live"></i></a>
+        </button>
+        <button>
+          <a href="${projects[cardNumber].seeSourceLink}">See Source <img src="images/cartoon.png" alt="Github icon"></a>
+        </button>
+      </div>
+      </div>
+      </div>
+    </div>
+    </section>`;
+  document.addEventListener('click', (event) => {
+    if (event.target.id === 'close-popUp') {
+      popUp.style.display = 'none';
+    }
+  });
+}
+
+for (let i = 0; i < Btns.length; i += 1) {
+  Btns[i].addEventListener('click', () => {
+    popUpDesktop(i);
+  });
+}
