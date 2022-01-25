@@ -507,16 +507,22 @@ a {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+  }
+
   .nav-menu.active {
     left: 0;
   }
 
   .nav-item {
     margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
   }
 }
