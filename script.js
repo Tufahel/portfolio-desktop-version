@@ -160,15 +160,6 @@ function popUpMobile(cardNumber) {
                 <li class="btn">
                 <p>${projects[cardNumber].technologies[2]}</p>
                 </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[3]}</p>
-                </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[4]}</p>
-                </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[5]}</p>
-                </li>
             </ul>
         </ul>
         <div class="modal-btns">
