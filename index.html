@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+_d<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,61 +23,61 @@
     <section class="front-page-body">
       <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-logo">My Logo</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+          <a href="#" class="nav-logo">My Logo</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-</header>
+      </header>
       <div>
         <div class="intro">
-            <h1>
-                I am Tufahel Ahmed <br />
-                Great to meet you!!
-              </h1>
-              <div class="intro-paragraph">
-                <p>
-                  I am a software developer. I have done some interesting projects
-                  using react js, node js and ruby on rails. I am learning new things
-                  and implementing them instantly. I can help you build a project,
-                  feature or website look through some of work and experience if you
-                  like what you see and have a project you need coded, don't hesitate
-                  to contact me.
-                </p>
-                <p class="front-page-connect">LET'S CONNECT</p>
-                <div class="front-page-container">
-                  <ul>
-                    <li class="icon">
-                      <a href=""><img src="images/Vector-4.png" alt="" /></a>
-                    </li>
-                    <li class="icon">
-                      <a href=""><img src="images/Linkedin-icon.png" alt="" /></a>
-                    </li>
-                    <li class="icon">
-                      <a href=""><img src="images/Vector-1.png" alt="" /></a>
-                    </li>
-                    <li class="icon">
-                      <a href=""><img src="images/Vector-3.png" alt="" /></a>
-                    </li>
-                    <li class="icon">
-                      <a href=""><img src="images/Vector.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          <h1>
+            I am Tufahel Ahmed <br />
+            Great to meet you!!
+          </h1>
+          <div class="intro-paragraph">
+            <p>
+              I am a software developer. I have done some interesting projects
+              using react js, node js and ruby on rails. I am learning new
+              things and implementing them instantly. I can help you build a
+              project, feature or website look through some of work and
+              experience if you like what you see and have a project you need
+              coded, don't hesitate to contact me.
+            </p>
+            <p class="front-page-connect">LET'S CONNECT</p>
+            <div class="front-page-container">
+              <ul>
+                <li class="icon">
+                  <a href=""><img src="images/Vector-4.png" alt="" /></a>
+                </li>
+                <li class="icon">
+                  <a href=""><img src="images/Linkedin-icon.png" alt="" /></a>
+                </li>
+                <li class="icon">
+                  <a href=""><img src="images/Vector-1.png" alt="" /></a>
+                </li>
+                <li class="icon">
+                  <a href=""><img src="images/Vector-3.png" alt="" /></a>
+                </li>
+                <li class="icon">
+                  <a href=""><img src="images/Vector.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -238,7 +238,7 @@
               <p>2015</p>
             </div>
           </div>
-          <div class="card__description">
+          <div class="card_escription">
             <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
@@ -537,12 +537,11 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem,
           quidem aliquam? Voluptates eius vitae quas dolore dolor. Eos, ut fuga?
         </p>
-        <!-- action="https://formspree.io/f/mjvlknzp" -->
         <form
           class="contact__me__form"
-          action="#"
+          action="https://formspree.io/f/mjvlknzp"
           method="post"
-          name="form1"
+          id="form"
         >
           <input
             class="input"
@@ -554,6 +553,7 @@
           <input
             class="input"
             type="email"
+            id="email"
             placeholder="example@gmail.com"
             required
           />
@@ -567,7 +567,15 @@
             placeholder="Write your message here ..."
             required
           ></textarea>
-          <button class="btn btn1 btn2" type="submit" onclick="validate()">Get in Touch</button>
+          <button
+            class="btn btn1 btn2"
+            id="submitButton"
+            type="submit"
+            onclick="validation()"
+          >
+            Get in Touch
+          </button>
+          <h3 class="error-message" id="text"></h3>
         </form>
       </div>
     </section>

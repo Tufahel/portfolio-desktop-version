@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Tonic',
     src: 'images/Snapshoot-Portfolio.png',
-    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     seeLiveLink: '#',
     seeSourceLink: '#',
@@ -73,22 +73,22 @@ function popUpDesktop(cardNumber) {
       <div class="modal-technologies">
         <ul class="project-tools">
             <ul class="mini__btn">
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[0]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[1]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[2]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[3]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[4]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[5]}</p>
                 </li>
             </ul>
@@ -150,24 +150,15 @@ function popUpMobile(cardNumber) {
       </div>
       <div class="modal-technologies">
         <ul class="project-tools">
-            <ul class="mini__btn">
-                <li class="btn">
+            <ul class="tech__mini__btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[0]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[1]}</p>
                 </li>
-                <li class="btn">
+                <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[2]}</p>
-                </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[3]}</p>
-                </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[4]}</p>
-                </li>
-                <li class="btn">
-                <p>${projects[cardNumber].technologies[5]}</p>
                 </li>
             </ul>
         </ul>
@@ -196,20 +187,31 @@ for (let i = 0; i < BtnsMobile.length; i += 1) {
   });
 }
 
-function validate() {
-  var mail = document.getElementById("email").value;
-  console.log("recieve");
+function validation(e) {
+  const form = document.getElementById('form');
+  const email = document.getElementById('email').value;
 
-  var regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const text = document.getElementById('text');
+  const pattern = /^([a-z0-9\\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
-  if(regx.email(mail)){
-    console.log("ok");
-    alert("You have provided a valid Email ID");
-    return true;
+  if (email.match(pattern)) {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = 'Your Email Address is valid';
+    text.style.color = 'green';
+    text.style.background = 'white';
+  } else {
+    text.innerHTML = 'Enter valid Email address';
+    text.style.color = 'red';
+    text.style.background = 'white';
+    e.preventDefault();
   }
-  else{
-    console.log("not ok");
-    alert("Sorry! Incorrect");
-    return false;
+
+  if (email === '') {
+    form.classList.remove('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = 'Enter value in each field';
+    text.style.color = 'blue';
+    text.style.background = 'white';
   }
 }
