@@ -475,6 +475,7 @@ a {
 .modal-technologies {
   width: 35%;
 }
+
 .tech__btn {
   height: 30px;
 }
@@ -482,6 +483,7 @@ a {
 .tech__btn p {
   margin-top: 5px;
 }
+
 .tech__mini__btn {
   padding-left: 0;
 }
