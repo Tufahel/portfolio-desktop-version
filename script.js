@@ -195,3 +195,21 @@ for (let i = 0; i < BtnsMobile.length; i += 1) {
     popUpMobile(i);
   });
 }
+
+function validate() {
+  var mail = document.getElementById("email").value;
+  console.log("recieve");
+
+  var regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+  if(regx.email(mail)){
+    console.log("ok");
+    alert("You have provided a valid Email ID");
+    return true;
+  }
+  else{
+    console.log("not ok");
+    alert("Sorry! Incorrect");
+    return false;
+  }
+}
