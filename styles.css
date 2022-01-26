@@ -475,6 +475,16 @@ a {
 .modal-technologies {
   width: 35%;
 }
+.tech__btn {
+  height: 30px;
+}
+
+.tech__btn p {
+  margin-top: 5px;
+}
+.tech__mini__btn {
+  padding-left: 0;
+}
 
 .modal-btns {
   width: 100%;
@@ -491,7 +501,7 @@ a {
   justify-content: space-around;
   gap: 10px;
   color: #7b83dd;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 3%;
   padding: 0;
@@ -500,9 +510,9 @@ a {
 .modal-btns button {
   background: white;
   margin: 15px;
-  padding: 15px;
+  padding: 10px;
   border: #7b83dd solid 2px;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 100%;
 }
 
