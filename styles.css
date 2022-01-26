@@ -403,7 +403,7 @@ a {
 }
 
 .modal {
-  background: whitesmoke;
+  background: white;
   position: fixed;
   top: 30px;
   left: 70px;
@@ -421,7 +421,7 @@ a {
 }
 
 .modal-content {
-  background: center whitesmoke;
+  background: center white;
   backdrop-filter: blur(1px);
   width: 85%;
   margin: 0 auto;
@@ -477,12 +477,12 @@ a {
 }
 
 .modal-btns {
-  width: 50%;
-  height: 20%;
-  margin: 0 auto;
+  width: 100%;
+  height: 10%;
   display: flex;
+  border-top: whitesmoke solid 2px;
   justify-content: space-around;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .modal-btns button a {
@@ -498,16 +498,17 @@ a {
 }
 
 .modal-btns button {
-  margin: 10px;
+  background: white;
+  margin: 15px;
   padding: 15px;
   border: #7b83dd solid 2px;
   border-radius: 5px;
-  width: 120vh;
+  width: 100%;
 }
 
 .modal-btns button img {
-  height: 15px;
-  width: 14px;
+  height: 20px;
+  width: 20px;
 }
 
 @media (min-width: 992px) {
