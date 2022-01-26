@@ -187,12 +187,13 @@ for (let i = 0; i < BtnsMobile.length; i += 1) {
   });
 }
 
+const form = document.getElementById('form');
 function validation(e) {
-  const form = document.getElementById('form');
   const email = document.getElementById('email').value;
+  // const submitButton = document.getElementById('submitButton');
 
   const text = document.getElementById('text');
-  const pattern = /^([a-z0-9\\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const pattern = /^([a-z0-9._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   if (email.match(pattern)) {
     form.classList.add('valid');
@@ -215,3 +216,5 @@ function validation(e) {
     text.style.background = 'white';
   }
 }
+
+form.addEventListener('submit', validation);
