@@ -695,4 +695,9 @@ a {
     top: 30px;
     left: 10px;
   }
+
+  .contact__me {
+    background-image: url("images/contact-form-shapes-mobile.svg");
+    background-size: 80% 85%;
+  }
 }
