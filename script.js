@@ -197,13 +197,10 @@ const formElements = form.elements;
 const getFormData = () => {
   const data = { [formIdentifier]: {} };
   for (const element of formElements) {
-    console.log('identi', formIdentifier, typeof (formIdentifier));
     if (element.name.length > 0) {
-      console.log('element value again', element.value);
       data[formIdentifier][element.name] = element.value;
     }
   }
-  console.log('data', data);
   return data;
 };
 
@@ -218,10 +215,7 @@ const populateForm = () => {
     const savedData = JSON.parse(localStorage.getItem(formIdentifier));
     for (const element of formElements) {
       if (element.name in savedData) {
-        console.log('elelments', element.name);
-        console.log('saved', savedData);
         element.value = savedData[element.name];
-        console.log('element value', element.value);
       }
     }
   }
