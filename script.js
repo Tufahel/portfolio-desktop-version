@@ -190,7 +190,6 @@ for (let i = 0; i < BtnsMobile.length; i += 1) {
 const form = document.getElementById('form');
 function validation(e) {
   const email = document.getElementById('email').value;
-  // const submitButton = document.getElementById('submitButton');
 
   const text = document.getElementById('text');
   const pattern = /^([a-z0-9._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
@@ -202,7 +201,7 @@ function validation(e) {
     text.style.color = 'green';
     text.style.background = 'white';
   } else {
-    text.innerHTML = 'Enter valid Email address';
+    text.innerHTML = 'Enter valid Email using small letter only';
     text.style.color = 'red';
     text.style.background = 'white';
     e.preventDefault();
