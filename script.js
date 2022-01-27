@@ -187,34 +187,44 @@ for (let i = 0; i < BtnsMobile.length; i += 1) {
   });
 }
 
-const form = document.getElementById('form');
-function validation(e) {
-  const email = document.getElementById('email').value;
-  // const submitButton = document.getElementById('submitButton');
+const formId = 'form';
+const url = location.href;
+const formIdentifier = `${url} ${formId}`;
+const saveButton = document.querySelector('#submitButton');
+const form = document.querySelector(`#${formId}`);
+const formElements = form.elements;
 
-  const text = document.getElementById('text');
-  const pattern = /^([a-z0-9._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
-
-  if (email.match(pattern)) {
-    form.classList.add('valid');
-    form.classList.remove('invalid');
-    text.innerHTML = 'Your Email Address is valid';
-    text.style.color = 'green';
-    text.style.background = 'white';
-  } else {
-    text.innerHTML = 'Enter valid Email address';
-    text.style.color = 'red';
-    text.style.background = 'white';
-    e.preventDefault();
+const getFormData = () => {
+  const data = { [formIdentifier]: {} };
+  for (const element of formElements) {
+    console.log('identi', formIdentifier, typeof (formIdentifier));
+    if (element.name.length > 0) {
+      console.log('element value again', element.value);
+      data[formIdentifier][element.name] = element.value;
+    }
   }
+  console.log('data', data);
+  return data;
+};
 
-  if (email === '') {
-    form.classList.remove('valid');
-    form.classList.remove('invalid');
-    text.innerHTML = 'Enter value in each field';
-    text.style.color = 'blue';
-    text.style.background = 'white';
+saveButton.onclick = (event) => {
+  event.preventDefault();
+  const data = getFormData();
+  localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
+};
+
+const populateForm = () => {
+  if (localStorage.key(formIdentifier)) {
+    const savedData = JSON.parse(localStorage.getItem(formIdentifier));
+    for (const element of formElements) {
+      if (element.name in savedData) {
+        console.log('elelments', element.name);
+        console.log('saved', savedData);
+        element.value = savedData[element.name];
+        console.log('element value', element.value);
+      }
+    }
   }
-}
+};
 
-form.addEventListener('submit', validation);
+document.onload = populateForm();
