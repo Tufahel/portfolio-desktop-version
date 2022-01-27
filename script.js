@@ -207,14 +207,6 @@ function validation(e) {
     text.style.background = 'white';
     e.preventDefault();
   }
-
-  if (email === '') {
-    form.classList.remove('valid');
-    form.classList.remove('invalid');
-    text.innerHTML = 'Enter value in each field';
-    text.style.color = 'blue';
-    text.style.background = 'white';
-  }
 }
 
 form.addEventListener('submit', validation);
