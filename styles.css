@@ -375,6 +375,7 @@ a {
   padding-left: 16px;
   margin-left: 24px;
   margin-right: 24px;
+
 }
 
 .text__area {
@@ -616,11 +617,11 @@ a {
   }
 
   .input {
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .text__area {
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .btn2 {
