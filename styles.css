@@ -375,7 +375,6 @@ a {
   padding-left: 16px;
   margin-left: 24px;
   margin-right: 24px;
-
 }
 
 .text__area {
@@ -695,5 +694,10 @@ a {
   .modal {
     top: 30px;
     left: 10px;
+  }
+
+  .contact__me {
+    background-image: url("images/contact-form-shapes-mobile.svg");
+    background-size: 80% 85%;
   }
 }

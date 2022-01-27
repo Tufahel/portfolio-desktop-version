@@ -199,11 +199,9 @@ function validation(e) {
     form.classList.remove('invalid');
     text.innerHTML = 'Your Email Address is valid';
     text.style.color = 'green';
-    text.style.background = 'white';
   } else {
     text.innerHTML = 'Enter valid Email using small letter only';
     text.style.color = 'red';
-    text.style.background = 'white';
     e.preventDefault();
   }
 }
