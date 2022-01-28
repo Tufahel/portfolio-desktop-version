@@ -616,11 +616,11 @@ a {
   }
 
   .input {
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .text__area {
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .btn2 {
