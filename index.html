@@ -541,6 +541,7 @@
           class="contact__me__form"
           action="https://formspree.io/f/mjvlknzp"
           method="post"
+          id="form"
         >
           <input
             class="input"
@@ -552,6 +553,7 @@
           <input
             class="input"
             type="email"
+            id="email"
             placeholder="example@gmail.com"
             required
           />
@@ -565,7 +567,15 @@
             placeholder="Write your message here ..."
             required
           ></textarea>
-          <button class="btn btn1 btn2" type="submit">Get in Touch</button>
+          <button
+            class="btn btn1 btn2"
+            id="submitButton"
+            type="submit"
+            onclick="validation()"
+          >
+            Get in Touch
+          </button>
+          <h3 class="error-message" id="text"></h3>
         </form>
       </div>
     </section>
