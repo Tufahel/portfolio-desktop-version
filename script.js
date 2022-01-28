@@ -218,7 +218,6 @@ saveButton.onclick = (event) => {
       text.innerHTML = 'Your Email Address is valid';
       text.style.color = 'green';
     } else {
-      text.innerHTML = 'Enter valid Email using small letter only';
       text.style.color = 'red';
       e.preventDefault();
     }
