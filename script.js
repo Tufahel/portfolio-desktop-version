@@ -146,7 +146,7 @@ function popUpMobile(cardNumber) {
       </div>
       <div class="modal-flex">
       <div class="modal-description">
-        <p>${projects[cardNumber].description[0]}</p>
+        <p>${projects[cardNumber].description}</p>
       </div>
       <div class="modal-technologies">
         <ul class="project-tools">
