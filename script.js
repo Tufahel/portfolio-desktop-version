@@ -205,7 +205,6 @@ const getFormData = () => {
 };
 
 saveButton.onclick = (event) => {
-  const form = document.getElementById('form');
   function validation(e) {
     const email = document.getElementById('email').value;
 
@@ -213,8 +212,6 @@ saveButton.onclick = (event) => {
     const pattern = /^([a-z0-9._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
     if (email.match(pattern)) {
-      form.classList.add('valid');
-      form.classList.remove('invalid');
       text.innerHTML = 'Your Email Address is valid';
       text.style.color = 'green';
     } else {
