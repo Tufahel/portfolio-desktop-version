@@ -29,20 +29,26 @@ menuItems.forEach(
 
 const projects = [
   {
-    title: 'Tonic',
-    src: 'images/Snapshoot-Portfolio.png',
-    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    title: 'Dirt Bikes',
+    org: 'Microverse',
+    stack: 'Full Stack Dev',
+    year: '2022',
+    src: 'images/dirt_bike.gif',
+    description: ['Dirt Bikes is an application to book dirt bikes for rent. The user will be able to choose a bike according to his preferences and book a period during which he will use the desired bike.'],
+    technologies: ['RoR', 'PostgreSQL', 'React', 'Redux', 'JWT', 'Rswag'],
+    seeLiveLink: 'https://incredible-unicorn-5f0c7d.netlify.app/',
+    seeSourceLink: 'https://github.com/Tufahel/book-dirt-bike-back-end',
   },
   {
-    title: 'Multi-post stories',
-    src: 'images/Snapshoot-Portfolio-1.png',
-    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur. minus beatae ullam laudantium animi, ad rem atque veritatis suscipit. Omnis consequuntur, numquam rem voluptatum voluptate assumenda recusandae impedit ut facilis minus totam odio magni repellat natus quisquam vitae atque ad asperiores optio unde incidunt, esse quaerat sequi iste. Ratione asperiores est magni sequi vitae repellat, totam eius aspernatur consectetur, quibusdam minus repudiandae dolor temporibus excepturi quasi eaque iste animi quo omnis placeat modi fuga. Fugit esse sapiente recusandae est doloremque labore eligendi expedita, eos pariatur in neque consequuntur asperiores ullam, exercitationem id dolores!'],
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    title: 'Air Pollution Tracker',
+    org: 'Microverse',
+    stack: 'Front End Dev',
+    year: '2022',
+    src: 'images/air_pollution.gif',
+    description: ['Air pollution Tracker is basically a mobile webApp application which tracks the data of air pollution based on gas percentage of air from Air Pollution API of a specific country from Rest Countries API based on their continent.'],
+    technologies: ['React', 'Redux', 'Jest', 'Bootstrap', 'CSS'],
+    seeLiveLink: 'https://voluble-elf-b07508.netlify.app/',
+    seeSourceLink: 'https://github.com/Tufahel/air-pollution-tracker',
   },
   {
     title: 'Facebook 360',
@@ -81,15 +87,15 @@ function popUpDesktop(cardNumber) {
       </div>
       <div class="card__tag card__tag__modal">
           <div class="tag">
-            <p>Canopy</p>
+            <p>${projects[cardNumber].org}</p>
           </div>
           <div class="tag__inactive">
             <img src="images/Counter.png" alt="" />
-            <p>Back End Dev</p>
+            <p>${projects[cardNumber].stack}</p>
           </div>
           <div class="tag__inactive">
             <img src="images/Counter.png" alt="" />
-            <p>2015</p>
+            <p>${projects[cardNumber].year}</p>
           </div>
       </div>
       <div class="modal-image">
@@ -159,15 +165,15 @@ function popUpMobile(cardNumber) {
       </div>
       <div class="card__tag card__tag__modal">
           <div class="tag">
-            <p>Canopy</p>
+            <p>${projects[cardNumber].org}</p>
           </div>
           <div class="tag__inactive">
             <img src="images/Counter.png" alt="" />
-            <p>Back End Dev</p>
+            <p>${projects[cardNumber].stack}</p>
           </div>
           <div class="tag__inactive">
             <img src="images/Counter.png" alt="" />
-            <p>2015</p>
+            <p>${projects[cardNumber].year}</p>
           </div>
       </div>
       <div class="modal-image">
@@ -188,6 +194,15 @@ function popUpMobile(cardNumber) {
                 </li>
                 <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[2]}</p>
+                </li>
+                <li class="btn tech__btn">
+                <p>${projects[cardNumber].technologies[3]}</p>
+                </li>
+                <li class="btn tech__btn">
+                <p>${projects[cardNumber].technologies[4]}</p>
+                </li>
+                <li class="btn tech__btn">
+                <p>${projects[cardNumber].technologies[5]}</p>
                 </li>
             </ul>
         </ul>
