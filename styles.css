@@ -23,6 +23,14 @@ a {
   text-decoration: none;
 }
 
+.resume {
+  color: #7f8cff;
+}
+
+.resume:hover {
+  color: white;
+}
+
 .front-page-body {
   background-color: #fff;
   background-image: url("images/header-shapes-mobile.png");
@@ -110,12 +118,6 @@ a {
 .front-page-icon {
   width: 20px;
   margin-right: 10px;
-}
-
-.front-page-connect {
-  color: #7f8cff;
-  font-size: 16px;
-  padding-bottom: 20px;
 }
 
 .cards {
