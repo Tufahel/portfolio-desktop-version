@@ -33,55 +33,50 @@ a {
   margin: 0 auto;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  margin-left: 20px;
 }
 
-.hamburger {
+.closeIcon {
   display: none;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: rgb(99, 98, 98);
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  opacity: 0.9;
+  list-style: none;
+  margin: 0;
+  padding-top: 50px;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menuItem {
+  color: #272a31;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
-.nav-item {
-  margin-left: 5rem;
-}
-
-.nav-link {
-  font-size: 15px;
-  font-weight: 400;
-  color: #344563;
-}
-
-.nav-link:hover {
-  color: #482ff7;
-}
-
-.nav-logo {
-  font-size: 18px;
-  font-weight: 700;
-  color: #6070ff;
+.showMenu {
+  transform: translateY(0);
 }
 
 .intro {
-  margin: 12% 10%;
+  padding: 5% 10%;
   font-family: sans-serif;
 }
 
@@ -543,9 +538,26 @@ a {
     margin-right: 20px;
   }
 
-  .nav-link {
-    display: inline;
-    margin-top: 100px;
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    transform: none;
+    transition: none;
+    background: none;
+    display: inline-flex;
+    height: 50px;
+    justify-content: space-evenly;
+    padding: 0px;
+    background-color: white;
+  }
+
+  .menuItem {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 44px;
   }
 
   .front-page-body {
@@ -629,26 +641,6 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    left: 100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 40px 0;
-  }
 
   .hamburger {
     display: block;
