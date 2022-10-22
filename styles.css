@@ -212,6 +212,7 @@ a {
   color: #366df2;
   border: 1px solid #366df2;
   padding: 0 15px !important;
+  cursor: pointer;
 }
 
 .btn1:hover {
@@ -293,6 +294,13 @@ a {
 
 .skill__ul {
   padding: 0;
+}
+
+.skill__button{
+  background-color: white;
+  border: whitesmoke;
+  width: 50px;
+  cursor: pointer;
 }
 
 .skill__arrow {

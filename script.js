@@ -288,3 +288,41 @@ const populateForm = () => {
 };
 
 document.onload = populateForm();
+
+const skillBtns = document.querySelectorAll('.skill__button');
+const skillUl = document.querySelectorAll('.skill__ul');
+
+for (let i = 0; i < 3; i += 1) skillUl[i].style.display = 'none';
+
+function toggleFirstSkills() {
+  if (skillUl[0].classList.contains('showSkill')) {
+    skillUl[0].classList.remove('showSkill');
+    skillUl[0].style.display = 'block';
+  } else {
+    skillUl[0].classList.add('showSkill');
+    skillUl[0].style.display = 'none';
+  }
+}
+
+function toggleSecondSkills() {
+  if (skillUl[1].classList.contains('showSkill')) {
+    skillUl[1].classList.remove('showSkill');
+    skillUl[1].style.display = 'block';
+  } else {
+    skillUl[1].classList.add('showSkill');
+    skillUl[1].style.display = 'none';
+  }
+}
+function toggleThirdSkills() {
+  if (skillUl[2].classList.contains('showSkill')) {
+    skillUl[2].classList.remove('showSkill');
+    skillUl[2].style.display = 'block';
+  } else {
+    skillUl[2].classList.add('showSkill');
+    skillUl[2].style.display = 'none';
+  }
+}
+
+skillBtns[0].addEventListener('mouseover', toggleFirstSkills);
+skillBtns[1].addEventListener('mouseover', toggleSecondSkills);
+skillBtns[2].addEventListener('mouseover', toggleThirdSkills);
