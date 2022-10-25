@@ -692,9 +692,8 @@ a {
 
   .intro__image {
     width: 40%;
-    height: 60%
+    height: 60%;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -713,6 +712,8 @@ a {
 
   .modal {
     background-color: white;
+    top: 30px;
+    left: 10px;
   }
 
   .modal-flex {
@@ -730,7 +731,7 @@ a {
     width: 100%;
   }
 
-  .project-tools .card__tag__modal .modal-header{
+  .project-tools .card__tag__modal .modal-header {
     padding: 0;
   }
 
@@ -741,11 +742,6 @@ a {
 
   .modal-btns button {
     width: 50vh;
-  }
-
-  .modal {
-    top: 30px;
-    left: 10px;
   }
 
   .contact__me {
