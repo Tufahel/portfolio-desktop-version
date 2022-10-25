@@ -489,7 +489,7 @@ a {
   line-height: 30px;
   color: black;
   text-align: justify;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .tech__btn {
