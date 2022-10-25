@@ -439,7 +439,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: 25px;
-  padding: 0% 10%;
+  padding: 0% 8%;
 }
 
 .modal-content {
@@ -453,7 +453,7 @@ a {
 
 .card__tag__modal {
   margin-left: 10px;
-  padding: 0% 10%;
+  padding: 0% 9%;
 }
 
 .modal-header {
@@ -483,22 +483,13 @@ a {
   width: 100%;
 }
 
-.modal-description {
-  width: 100%;
-  margin: 3% auto 0;
-}
-
 .modal-description p {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: black;
-  width: 70%;
   text-align: justify;
-}
-
-.modal-technologies {
-  width: 35%;
+  margin-left: 0px;
 }
 
 .tech__btn {
