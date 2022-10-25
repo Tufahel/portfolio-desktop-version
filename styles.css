@@ -39,7 +39,7 @@ a {
   border-bottom-left-radius: 100px;
   background-repeat: no-repeat;
   background-position: 0 50px;
-  background-size: 100%;
+  background-size: cover;
   margin: 0 auto;
 }
 
@@ -87,8 +87,7 @@ a {
 
 .intro_with_pic {
   display: flex;
-  gap: 5%;
-  padding: 5% 10%;
+  padding: 5%;
 }
 
 .intro {
@@ -99,8 +98,8 @@ a {
   border: 1px solid #ddd;
   border-radius: 50%;
   margin: 25px;
-  width: cover;
-  height: 100%;
+  width: 30%;
+  height: 60%;
 }
 
 .intro__image:hover {
@@ -317,7 +316,7 @@ a {
   padding: 0;
 }
 
-.skill__button{
+.skill__button {
   background-color: white;
   border: whitesmoke;
   width: 50px;
@@ -562,7 +561,7 @@ a {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
@@ -596,7 +595,7 @@ a {
     display: inline-flex;
     height: 50px;
     justify-content: space-evenly;
-    padding: 0px;
+    padding: 0;
     background-color: white;
   }
 
@@ -682,8 +681,15 @@ a {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  .intro_with_pic {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
     cursor: pointer;
