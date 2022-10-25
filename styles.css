@@ -85,9 +85,27 @@ a {
   transform: translateY(0);
 }
 
-.intro {
+.intro_with_pic {
+  display: flex;
+  gap: 5%;
   padding: 5% 10%;
+}
+
+.intro {
   font-family: sans-serif;
+}
+
+.intro__image {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin: 25px;
+  width: cover;
+  height: 100%;
+}
+
+.intro__image:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  background-color: whitesmoke;
 }
 
 .intro h1 {
