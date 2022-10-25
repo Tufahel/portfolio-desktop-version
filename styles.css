@@ -33,6 +33,7 @@ a {
 
 .front-page-body {
   background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   background-image: url("images/header-shapes-mobile.png");
   border-bottom-left-radius: 100px;
   background-repeat: no-repeat;
@@ -130,7 +131,7 @@ a {
 }
 
 .card {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -223,6 +224,7 @@ a {
 
 .about {
   background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 100px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -610,10 +612,6 @@ a {
 
   .card {
     margin: 5% 4%;
-  }
-
-  .card__image {
-    height: 100%;
   }
 
   .about__content {
