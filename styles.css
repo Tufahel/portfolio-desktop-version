@@ -465,10 +465,12 @@ a {
   font-size: 40px;
   line-height: 32px;
   color: black;
+  margin: 0;
 }
 
 .modal-image img {
-  width: 100%;
+  width: 55%;
+  margin: 0 0 0 23%;
   box-shadow: 0 5px 20px rgb(49, 48, 48);
 }
 
@@ -696,11 +698,20 @@ a {
     padding: 0 0 100px 0;
   }
 
+  .card {
+    margin-top: 25px;
+  }
+
   .modal {
     background-color: white;
     top: 10px;
     left: 10px;
     width: 100%;
+  }
+
+  .modal-image img {
+    width: 80%;
+    margin: 0;
   }
 
   .modal-flex {
