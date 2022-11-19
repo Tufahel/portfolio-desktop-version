@@ -426,8 +426,8 @@ a {
 .modal {
   background: whitesmoke;
   position: fixed;
-  top: 30px;
-  left: 70px;
+  top: 4%;
+  left: 5%;
   width: 90%;
   height: 95vh;
   overflow-y: scroll;
@@ -438,12 +438,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 25px;
-  padding: 0% 8%;
 }
 
 .modal-content {
   background: center white;
+  padding: 30px;
   backdrop-filter: blur(1px);
   width: 85%;
   margin: 0 auto;
@@ -451,18 +450,13 @@ a {
   border: none;
 }
 
-.card__tag__modal {
-  margin-left: 10px;
-  padding: 0% 9%;
-}
-
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0% 10%;
+  padding: 0% 0%;
 }
 
 .modal-header h2 {
@@ -473,14 +467,9 @@ a {
   color: black;
 }
 
-.modal-image {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .modal-image img {
   width: 100%;
+  box-shadow: 0 5px 20px rgb(49, 48, 48);
 }
 
 .modal-description p {
@@ -493,7 +482,8 @@ a {
 }
 
 .tech__btn {
-  height: 30px;
+  height: 38px;
+  margin: 10px;
 }
 
 .tech__btn p {
@@ -703,8 +693,9 @@ a {
 
   .modal {
     background-color: white;
-    top: 30px;
+    top: 10px;
     left: 10px;
+    width: 100%;
   }
 
   .modal-flex {
@@ -722,8 +713,8 @@ a {
     width: 100%;
   }
 
-  .project-tools .card__tag__modal .modal-header {
-    padding: 0;
+  .project-tools {
+    padding-left: 0;
   }
 
   .modal-btns {
