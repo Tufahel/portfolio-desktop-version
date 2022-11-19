@@ -40,6 +40,17 @@ const projects = [
     seeSourceLink: 'https://github.com/Tufahel/book-dirt-bike-back-end',
   },
   {
+    title: "Tufahel's Blog",
+    org: 'Microverse',
+    stack: 'Full Stack Dev',
+    year: '2022',
+    src: 'images/blog.gif',
+    description: ["Tufahel's Blog app is a classic example of a blog website. It is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts."],
+    technologies: ['RoR', 'PostgreSQL', 'React', 'Redux', 'JWT', 'TailwindCSS', 'Heroku', 'Netlify'],
+    seeLiveLink: 'https://euphonious-semolina-b80229.netlify.app/',
+    seeSourceLink: 'https://github.com/Tufahel/blog-app-front-end',
+  },
+  {
     title: 'Air Pollution Tracker',
     org: 'Microverse',
     stack: 'Front End Dev',
