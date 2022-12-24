@@ -117,13 +117,8 @@ function popUpDesktop(cardNumber) {
       </div>
       <div class="modal-image">
         <img src=${projects[cardNumber].src} alt="App Image">
-      </div>
-      <div class="modal-flex">
-      <div class="modal-description">
-        <p>${projects[cardNumber].description[0]}</p>
-      </div>
-      <div class="modal-technologies">
-        <ul class="project-tools">
+        <div class="modal-technologies">
+          <ul class="project-tools">
             <ul class="mini__btn">
                 <li class="btn tech__btn">
                 <p>${projects[cardNumber].technologies[0]}</p>
@@ -144,15 +139,20 @@ function popUpDesktop(cardNumber) {
                 <p>${projects[cardNumber].technologies[5]}</p>
                 </li>
             </ul>
-        </ul>
-        <div class="modal-btns">
-        <button>
-          <a href="${projects[cardNumber].seeLiveLink}">See Live <img src="images/tir.png" alt="See live"></i></a>
-        </button>
-        <button>
-          <a href="${projects[cardNumber].seeSourceLink}">See Source <img src="images/cartoon.png" alt="Github icon"></a>
-        </button>
+          </ul>
+          <div class="modal-btns">
+            <button>
+              <a href="${projects[cardNumber].seeLiveLink}">See Live <img src="images/tir.png" alt="See live"></i></a>
+            </button>
+            <button>
+              <a href="${projects[cardNumber].seeSourceLink}">See Source <img src="images/cartoon.png" alt="Github icon"></a>
+            </button>
+          </div>
+        </div>
       </div>
+      <div class="modal-flex">
+      <div class="modal-description">
+        <p>${projects[cardNumber].description[0]}</p>
       </div>
       </div>
     </div>

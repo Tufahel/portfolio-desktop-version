@@ -13,6 +13,7 @@ ul {
 h2 {
   font-size: 32px;
   color: #344563;
+  margin: 0;
 }
 
 p {
@@ -94,7 +95,7 @@ a {
   font-family: poppins, sans-serif;
   color: #344563;
   font-size: 20px;
-  padding: 100px;
+  padding: 50px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -150,13 +151,11 @@ a {
   overflow: hidden;
 }
 
-.card img {
-  width: 100%;
-  height: 80%;
-}
-
 .gif {
-  box-shadow: 0 5px 20px rgb(49, 48, 48);
+  box-shadow: 0 5px 10px rgb(49, 48, 48);
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .card__content {
@@ -226,7 +225,7 @@ a {
 
 .btn1 {
   font-size: 17px !important;
-  margin: 10px 0;
+  margin-top: 2%;
   background-color: white;
   color: #366df2;
   border: 1px solid #366df2;
@@ -468,9 +467,13 @@ a {
   margin: 0;
 }
 
+.modal-image {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal-image img {
-  width: 55%;
-  margin: 0 0 0 23%;
+  width: 100%;
   box-shadow: 0 5px 20px rgb(49, 48, 48);
 }
 
@@ -485,7 +488,7 @@ a {
 
 .tech__btn {
   height: 38px;
-  margin: 10px;
+  margin: 2px;
 }
 
 .tech__btn p {
@@ -497,7 +500,7 @@ a {
 }
 
 .modal-btns {
-  height: 10%;
+  height: 25%;
   display: flex;
   border-top: whitesmoke solid 2px;
   justify-content: space-around;
@@ -528,6 +531,7 @@ a {
 .modal-btns button img {
   height: 20px;
   width: 20px;
+  box-shadow: none;
 }
 
 .error-message {
@@ -666,19 +670,6 @@ a {
   }
 }
 
-@media only screen and (max-width: 1450px) {
-  .intro_with_pic {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .intro__image {
-    width: 40%;
-    height: 60%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -698,6 +689,10 @@ a {
     padding: 0 0 100px 0;
   }
 
+  .gif {
+    margin: 25px 0;
+  }
+
   .card {
     margin-top: 25px;
   }
@@ -710,7 +705,7 @@ a {
   }
 
   .modal-image img {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 
