@@ -29,17 +29,6 @@ menuItems.forEach(
 
 const projects = [
   {
-    title: 'Dirt Bikes',
-    org: 'Microverse',
-    stack: 'Full Stack Dev',
-    year: '2022',
-    src: 'images/dirt_bike.gif',
-    description: ['Dirt Bikes is an application to book dirt bikes for rent. The user will be able to choose a bike according to his preferences and book a period during which he will use the desired bike.'],
-    technologies: ['RoR', 'PostgreSQL', 'React', 'Redux', 'JWT', 'Rswag', 'Heroku', 'Netlify'],
-    seeLiveLink: 'https://incredible-unicorn-5f0c7d.netlify.app/',
-    seeSourceLink: 'https://github.com/Tufahel/book-dirt-bike-back-end',
-  },
-  {
     title: "Tufahel's Blog",
     org: 'Microverse',
     stack: 'Full Stack Dev',
@@ -49,6 +38,17 @@ const projects = [
     technologies: ['RoR', 'PostgreSQL', 'React', 'Redux', 'JWT', 'TailwindCSS', 'Heroku', 'Netlify'],
     seeLiveLink: 'https://euphonious-semolina-b80229.netlify.app/',
     seeSourceLink: 'https://github.com/Tufahel/blog-app-front-end',
+  },
+  {
+    title: 'Dirt Bikes',
+    org: 'Microverse',
+    stack: 'Full Stack Dev',
+    year: '2022',
+    src: 'images/dirt_bike.gif',
+    description: ['Dirt Bikes is an application to book dirt bikes for rent. The user will be able to choose a bike according to his preferences and book a period during which he will use the desired bike.'],
+    technologies: ['RoR', 'PostgreSQL', 'React', 'Redux', 'JWT', 'Rswag', 'Heroku', 'Netlify'],
+    seeLiveLink: 'https://incredible-unicorn-5f0c7d.netlify.app/',
+    seeSourceLink: 'https://github.com/Tufahel/book-dirt-bike-back-end',
   },
   {
     title: 'Air Pollution Tracker',
